@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09FE75AD3BC409B4179186E4 /* Pods_LBSwiftPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 781F951DCA28959BDB836B71 /* Pods_LBSwiftPlayer.framework */; };
+		F85D627220197D7B008A34B5 /* LBHomePlayerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85D627120197D7B008A34B5 /* LBHomePlayerController.swift */; };
 		F8668EB3201970120072A575 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8668EB2201970120072A575 /* AppDelegate.swift */; };
-		F8668EB5201970120072A575 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8668EB4201970120072A575 /* ViewController.swift */; };
 		F8668EB8201970120072A575 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8668EB6201970120072A575 /* Main.storyboard */; };
 		F8668EBA201970120072A575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8668EB9201970120072A575 /* Assets.xcassets */; };
 		F8668EBD201970120072A575 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8668EBB201970120072A575 /* LaunchScreen.storyboard */; };
@@ -38,9 +38,9 @@
 		64E0C382076D75B0A74F59C4 /* Pods-LBSwiftPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBSwiftPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBSwiftPlayer/Pods-LBSwiftPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		781F951DCA28959BDB836B71 /* Pods_LBSwiftPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LBSwiftPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99781243CB06CE917B4F078F /* Pods-LBSwiftPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBSwiftPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBSwiftPlayer/Pods-LBSwiftPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F85D627120197D7B008A34B5 /* LBHomePlayerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LBHomePlayerController.swift; path = ../../../../../Documents/LBHomePlayerController.swift; sourceTree = "<group>"; };
 		F8668EAF201970120072A575 /* LBSwiftPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBSwiftPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8668EB2201970120072A575 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F8668EB4201970120072A575 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8668EB7201970120072A575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8668EB9201970120072A575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8668EBC201970120072A575 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -121,8 +121,8 @@
 		F8668EB1201970120072A575 /* LBSwiftPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				F8668EE0201977690072A575 /* LBHome */,
 				F8668EB2201970120072A575 /* AppDelegate.swift */,
-				F8668EB4201970120072A575 /* ViewController.swift */,
 				F8668EB6201970120072A575 /* Main.storyboard */,
 				F8668EB9201970120072A575 /* Assets.xcassets */,
 				F8668EBB201970120072A575 /* LaunchScreen.storyboard */,
@@ -147,6 +147,14 @@
 				F8668ED4201970120072A575 /* Info.plist */,
 			);
 			path = LBSwiftPlayerUITests;
+			sourceTree = "<group>";
+		};
+		F8668EE0201977690072A575 /* LBHome */ = {
+			isa = PBXGroup;
+			children = (
+				F85D627120197D7B008A34B5 /* LBHomePlayerController.swift */,
+			);
+			path = LBHome;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +222,7 @@
 		F8668EA7201970120072A575 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LB;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = liubo;
@@ -340,8 +349,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8668EB5201970120072A575 /* ViewController.swift in Sources */,
 				F8668EB3201970120072A575 /* AppDelegate.swift in Sources */,
+				F85D627220197D7B008A34B5 /* LBHomePlayerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MECQS3Z269;
 				INFOPLIST_FILE = LBSwiftPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LBSwiftPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -528,7 +537,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MECQS3Z269;
 				INFOPLIST_FILE = LBSwiftPlayer/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LBSwiftPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
